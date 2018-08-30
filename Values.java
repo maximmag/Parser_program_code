@@ -16,7 +16,7 @@ public class Values {
                 hole += str.charAt(i);
                 int k = Integer.parseInt(hole);
                 if (k > 4) {
-                    System.out.println("Нет");
+                    System.out.println("0");
                     return;
                 }
                 hole = "";
@@ -29,7 +29,7 @@ public class Values {
                     }
                     arr.add(Integer.parseInt(hole));
                     if (arr.size() > 1000) {
-                        System.out.println("Нет");
+                        System.out.println("0");
                         return;
                     }
                     hole = "";
@@ -40,6 +40,7 @@ public class Values {
                 System.out.print(arr.get(i) + " ");
         }catch (Exception e){
             e.printStackTrace();
+            System.out.println("0");
         }
     }
 }
